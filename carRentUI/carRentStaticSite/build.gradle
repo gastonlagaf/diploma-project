@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+archivesBaseName = "carRentStaticSite"
+
+repositories {
+    jcenter()
+}
+
+jar {
+	from("src")
+	extension = 'zip'
+}
+
+task refresh(type: Copy) {
+	from 'src'
+	into "${System.getenv('CATALINA_HOME')}/webapps/carRentalWebapplication/WEB-INF/static"
+}
+
+publishing.publications.uiPublish { artifact jar }

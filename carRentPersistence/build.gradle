@@ -1,0 +1,14 @@
+apply plugin: 'base'
+
+allprojects {
+	apply plugin: "maven-publish"
+	
+	group = 'com.vehicle.rentservice.persistence'
+	version = property('persistence.version')
+	
+	publishing {
+		publications {
+			persistencePublish(MavenPublication)
+		}
+	}
+}

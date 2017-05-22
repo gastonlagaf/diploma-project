@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+archivesBaseName = 'defaultFlowSetService'
+
+repositories {
+    jcenter()
+	mavenLocal()
+}
+
+dependencies {
+	compile group: 'org.springframework', name: 'spring-core', version: property('spring.version')
+	compile group: 'org.springframework', name: 'spring-context', version: property('spring.version')
+	compile group: 'org.springframework.security', name: 'spring-security-core', version: property('spring.security.version')
+	
+	compile group: 'com.vehicle.rentservice.model', name: 'carRentEntity', version: property('model.version')
+	compile group: 'com.vehicle.rentservice.model', name: 'carRentDTO', version: property('model.version')
+	compile group: 'com.vehicle.rentservice.persistence', name: 'carRentOraclePersistence', version: property('persistence.version')
+}
+
+publishing.publications.servicePublish { from components.java }

@@ -1,0 +1,662 @@
+:defaultFlowSetService:dependencies
+
+------------------------------------------------------------
+Project :defaultFlowSetService
+------------------------------------------------------------
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+compile - Dependencies for source set 'main'.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+compileClasspath - Compile classpath for source set 'main'.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+compileOnly - Compile dependencies for source set 'main'.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+default - Configuration for default artifacts.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+runtime - Runtime dependencies for source set 'main'.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+testCompile - Dependencies for source set 'test'.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+testCompileOnly - Compile dependencies for source set 'test'.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+testRuntime - Runtime dependencies for source set 'test'.
++--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    \--- commons-logging:commons-logging:1.2
++--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE
+|    +--- org.springframework:spring-aop:4.3.6.RELEASE
+|    |    +--- org.springframework:spring-beans:4.3.6.RELEASE
+|    |    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.6.RELEASE
+|         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
++--- org.springframework.security:spring-security-core:4.2.1.RELEASE
+|    +--- aopalliance:aopalliance:1.0
+|    +--- org.springframework:spring-aop:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-beans:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-context:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    +--- org.springframework:spring-core:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
+|    \--- org.springframework:spring-expression:4.3.5.RELEASE -> 4.3.6.RELEASE (*)
++--- com.vehicle.rentservice.model:carRentEntity:0.5.1
+|    +--- org.hibernate:hibernate-validator:5.3.4.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+|    |    \--- com.fasterxml:classmate:1.3.1
+|    +--- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final
+|    \--- org.projectlombok:lombok:1.16.12
+\--- com.vehicle.rentservice.persistence:carRentOraclePersistence:0.5.1
+     +--- commons-dbcp:commons-dbcp:1.2.2
+     |    \--- commons-pool:commons-pool:1.3
+     +--- org.springframework.data:spring-data-jpa:1.11.0.RELEASE
+     |    +--- org.springframework.data:spring-data-commons:1.13.0.RELEASE
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.slf4j:slf4j-api:1.7.22
+     |    |    \--- org.slf4j:jcl-over-slf4j:1.7.22
+     |    |         \--- org.slf4j:slf4j-api:1.7.22
+     |    +--- org.springframework:spring-orm:4.3.6.RELEASE
+     |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    +--- org.springframework:spring-jdbc:4.3.6.RELEASE
+     |    |    |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE
+     |    |    |         +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    |    |         \--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    |    \--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-context:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-aop:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-tx:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-beans:4.3.6.RELEASE (*)
+     |    +--- org.springframework:spring-core:4.3.6.RELEASE (*)
+     |    +--- org.aspectj:aspectjrt:1.8.10
+     |    +--- org.slf4j:slf4j-api:1.7.22
+     |    \--- org.slf4j:jcl-over-slf4j:1.7.22 (*)
+     +--- org.hibernate:hibernate-core:5.2.6.Final
+     |    +--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    +--- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final
+     |    +--- org.javassist:javassist:3.20.0-GA
+     |    +--- antlr:antlr:2.7.7
+     |    +--- org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1
+     |    +--- org.jboss:jandex:2.0.3.Final
+     |    +--- com.fasterxml:classmate:1.3.0 -> 1.3.1
+     |    +--- dom4j:dom4j:1.6.1
+     |    +--- org.hibernate.common:hibernate-commons-annotations:5.0.1.Final
+     |    |    \--- org.jboss.logging:jboss-logging:3.3.0.Final
+     |    \--- javax.enterprise:cdi-api:1.1
+     |         +--- javax.el:el-api:2.2
+     |         +--- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1
+     |         +--- javax.annotation:jsr250-api:1.0
+     |         \--- javax.inject:javax.inject:1
+     \--- com.vehicle.rentservice.model:carRentEntity:0.5.1 (*)
+
+(*) - dependencies omitted (listed previously)
+
+BUILD SUCCESSFUL
+
+Total time: 1.667 secs

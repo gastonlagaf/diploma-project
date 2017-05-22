@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:sec="http://www.springframework.org/schema/security" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<sec:http auto-config="true">
+		<sec:access-denied-handler error-page="/user/login" />
+
+		<sec:form-login login-page="/user/login" username-parameter="auth_username" 
+			password-parameter="auth_password" default-target-url="/user/login/ok"
+			authentication-failure-url="/user/login/fail" login-processing-url="/user/login"
+			always-use-default-target="true" />
+		<sec:logout logout-url="/user/logout" logout-success-url="/user/logout/ok" />
+		<sec:csrf />
+	</sec:http>
+
+	<sec:authentication-manager>
+		<sec:authentication-provider>
+			<sec:jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="SELECT USERNAME, PASSWORD, 1 as enabled FROM CAR_RENT_SERVICE.USERS WHERE USERNAME = ?"
+				authorities-by-username-query="SELECT USERNAME, ROLE_NAME FROM CAR_RENT_SERVICE.USERS INNER JOIN CAR_RENT_SERVICE.ROLES ON USERS.ROLE_ID = ROLES.ROLE_ID WHERE USERNAME = ?" />
+			<sec:password-encoder hash="md5"/>
+		</sec:authentication-provider>
+	</sec:authentication-manager>
+
+</beans>

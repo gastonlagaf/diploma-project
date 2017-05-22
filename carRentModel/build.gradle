@@ -1,0 +1,14 @@
+apply plugin: 'base'
+
+allprojects {
+	apply plugin: 'maven-publish'
+
+	group = 'com.vehicle.rentservice.model'
+	version = property('model.version')
+
+	publishing {
+		publications {
+			modelPublish(MavenPublication)
+		}
+	}
+}

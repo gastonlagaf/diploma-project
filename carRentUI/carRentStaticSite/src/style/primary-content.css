@@ -1,0 +1,291 @@
+/* a element pointer */
+a:hover {
+	cursor:pointer;
+}
+
+/* toasts */
+.toast-red {
+	background-color: red;
+}
+
+.toast-green {
+	background-color: #009688;
+}
+
+/* modal buttons */
+.modal .modal-footer .btn,
+.modal .modal-footer .btn-large,
+.modal .modal-footer .btn-flat {
+	float: right;
+    margin: 6px;
+}
+
+/* content margins */
+.central-view {
+	margin: 0px;
+}
+
+.replyForm {
+	margin-top: 30px;
+}
+
+
+/* input color */
+.input-field input[type=number]:focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=email]:focus+label,
+.input-field input[type=password]:focus+label {
+	color: #78909c;
+}
+
+.input-field input[type=number]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+	border-bottom: 1px solid #78909c;
+	box-shadow: 0 1px 0 0 #78909c;
+}
+
+.input-field .prefix.active {
+	color: #78909c;
+}
+
+input[type=text].valid {
+	border-bottom: 1px solid #78909c;
+    box-shadow: 0 1px 0 0 #78909c;
+}
+
+/* textarea color */
+.input-field textarea:focus {
+	color: #78909c;
+}
+
+.input-field textarea[class=materialize-textarea]:focus {
+	border-bottom: 1px solid #78909c;
+	box-shadow: 0 1px 0 0 #78909c;
+}
+
+.input-field textarea[class=materialize-textarea]:focus+label {
+	color: #78909c;
+}
+
+.author-img {
+	margin-top: 10px;
+	opacity: .3;
+	width: 80%;
+	height: auto;
+}
+
+/* about page */
+.about-text {
+	font-size: 20px;
+	font-style: italic;
+}
+
+.about-title {
+	font-size: 32px;
+	font-style: italic;
+}
+
+/* input fields for login form */
+.login-form {
+	margin-top: 30px;
+}
+
+.login-form.input-field input[type=password]:focus+label,
+.login-form.input-field input[type=text]:focus+label {
+	color: white;
+}
+
+.login-form.input-field input[type=password]:focus,
+.login-form.input-field input[type=text]:focus {
+	border-bottom: 1px solid white;
+	box-shadow: 0 1px 0 0 white;
+}
+
+.login-form.input-field input[type=password]+label,
+.login-form.input-field input[type=text]+label {
+	color: white;
+}
+
+.login-form.input-field input[type=password],
+.login-form.input-field input[type=text] {
+	border-bottom: 1px solid white;
+	box-shadow: 0 1px 0 0 white;
+}
+
+.login-button {
+	font-size: 24px;
+	color: black;
+}
+
+/* Input autofield */
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+input.login-input:-webkit-autofill,
+input.login-input:-webkit-autofill:hover,
+input.login-input:-webkit-autofill:focus,
+input.login-input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0px 1000px #78909c inset !important;
+	-webkit-text-fill-color: white !important;
+}
+
+/* side navigation */
+.locale-selection-title {
+	font-size: 24px;
+	margin: 5px;
+	margin-left: 25px;
+}
+
+.locale-option {
+	color: white !important;
+}
+
+/* admin cabinet */
+.cabinet-title {
+	font-size: 36px;
+	margin: 15px;
+}
+
+div.cabinet-menu a.collection-item {
+	color: black;
+	font-size: 26px;
+	line-height: 4.5rem;
+	transition: color .5s;
+}
+
+.admin-options div.col {
+	padding: 0;
+}
+
+div.cabinet-menu a.collection-item:hover {
+	color: #78909c;
+}
+
+/* Vehicle view */
+.vehicle-image-view {
+	width: 95%;
+	height: auto;
+	margin: 15px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.vehicle-short-view {
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}
+
+.description-content {
+	margin-top: 10px;
+	float: none;
+}
+
+.characteristics-title {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+.characteristics {
+	margin-top: 10px;
+	font-size: 32px;
+}
+
+.vehicle-option {
+	width: 95%;
+}
+
+.admin-vehicle-option {
+	width: 31%;
+}
+
+.disabled-order-btn,
+.hidden-order-btn,
+#hidden-msg {
+	display: none;
+}
+
+.btn-basket {
+	display: none;
+	opacity: 0;
+}
+
+/* View Contract */
+.picker__weekday-display {
+	background-color: #78909c;
+}
+
+.picker__date-display {
+	background-color: #78909c;
+}
+
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected {
+	background-color: #78909c;
+}
+
+.picker__close,
+.picker__today {
+	color: #78909c;
+}
+
+.picker__day.picker__day--today {
+	color: #78909c;
+}
+
+#modal-order-form.modal {
+	max-height: 90% !important
+}
+
+.contract-table td {
+	padding: 0px 5px;
+}
+
+.contract-title {
+	margin: 0px;
+}
+
+#price-per-vehicle {
+	display: inline;
+}
+
+.contract-dates {
+	margin-top: 20px;
+}
+
+/* user cabinet */
+.contract-total-price {
+	margin: 0px;
+}
+
+/* Insert vehicle modal */
+#insert-vehicle-modal.modal.bottom-sheet {
+	max-height: 100%;
+}
+
+#insert-confirmation {
+	width: 100%;
+}
+
+.invalid-file {
+	color: red;
+	font-style: italic;
+}
+
+.pagination li.active {
+	background-color: #78909c;
+}
+
+/* user registration */
+#reg-confirmation {
+	width: 100%;
+}
+
+#user-modal.bottom-sheet {
+	max-height: 85%;
+}

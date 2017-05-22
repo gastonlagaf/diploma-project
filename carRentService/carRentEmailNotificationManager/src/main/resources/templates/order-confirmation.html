@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<style>
+.primary-text {
+	font-weight: 200;
+}
+</style>
+<meta charset="UTF-8">
+</head>
+<body>
+	<h1></b><i class="brand-text">CAR RENTAL SERVICE</i></h1>
+	<main>
+		<h2>Dear ${user}</h2>
+		<p>Your order has been submitted and awaits for payment</p>
+		<p>Period: ${from} - ${to}</p>
+		<p>Total Price: ${price} $</p>
+		<p>List of ordered vehicles</p>
+		<ul class='collection'>
+			${vehicles}
+		</ul>
+	</main>
+	<footer class="page-footer deep-purple">
+		<b><i class="white-text">Copyright youJustDontKnow Ltd.</i></b>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.navigation-view-btn {
+	width: 25%;
+}
+
+.navigation-cabinet-btn {
+	width: 25%;
+}
+
+.navigation-reply-btn {
+	width: 25%;
+}
+
+.navigation-about-btn {
+	width: 25%;
+}
+
+.dropdown-locale {
+	width: 80%;
+}
+
+.primary-text {
+	font-weight: 200;
+}
+
+.header-nav-text {
+	font-weight: 300;
+}
+
+.brand-text {
+	font-size: 36px;
+}
+
+.brand-logo.right {
+	left: 65%;
+}
+
+.tabs {
+	overflow-x: hidden;
+}

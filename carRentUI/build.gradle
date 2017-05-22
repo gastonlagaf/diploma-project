@@ -1,0 +1,14 @@
+apply plugin: 'base'
+
+allprojects {
+	apply plugin: "maven-publish"
+	
+	group = 'com.vehicle.rentservice.ui'
+	version = property('ui.version')
+	
+	publishing {
+		publications {
+			uiPublish(MavenPublication)
+		}
+	}
+}

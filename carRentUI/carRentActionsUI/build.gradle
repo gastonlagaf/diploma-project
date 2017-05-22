@@ -1,0 +1,25 @@
+apply plugin: 'java'
+
+archivesBaseName = "carRentActionsUI"
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+dependencies {
+	compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+
+	compile group: 'org.springframework', name: 'spring-webmvc', version: property('spring.web.version')
+	compile group: 'org.springframework.security', name: 'spring-security-web', version: property('spring.security.version')
+	compile group: 'org.springframework.security', name: 'spring-security-config', version: property('spring.security.version')
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: property('jackson.version')
+	compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: property('jackson.version')
+	
+	compile group: 'com.vehicle.rentservice.model', name: 'carRentEntity', version: property('model.version')
+	compile group: 'com.vehicle.rentservice.model', name: 'carRentUiRequests', version: property('model.version')
+	compile group: 'com.vehicle.rentservice.service', name: 'defaultFlowSetService', version: property('service.version')
+	compile group: 'com.vehicle.rentservice.service', name: 'carRentFacadeServices', version: property('service.version')
+}
+
+publishing.publications.uiPublish { from components.java }

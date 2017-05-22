@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+archivesBaseName = "carRentJSP"
+
+repositories {
+    jcenter()
+}
+
+jar {
+	from("src")
+	extension = 'zip'
+}
+
+task refresh(type: Copy) {
+	from 'src'
+	into "${System.getenv('CATALINA_HOME')}/webapps/carRentalWebapplication/WEB-INF/views"
+}
+
+publishing.publications.uiPublish { artifact jar }

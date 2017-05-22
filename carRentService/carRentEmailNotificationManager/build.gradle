@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+dependencies {
+    implementation group: 'javax.mail', name: 'mail', version: property('javax.mail.version')
+    implementation group: 'com.vehicle.rentservice.model', name: 'carRentEntity', version: property('model.version')
+    implementation group: 'org.springframework', name: 'spring-core', version: property('spring.version')
+	implementation group: 'org.springframework', name: 'spring-context', version: property('spring.version')
+	implementation group: 'javax.inject', name: 'javax.inject', version: property('javax.inject.version')
+}
+

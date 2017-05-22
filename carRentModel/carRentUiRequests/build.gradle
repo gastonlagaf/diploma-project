@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+
+archivesBaseName = "carRentUiRequests"
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+dependencies {
+	implementation group: 'org.springframework', name: 'spring-web', version: property('spring.web.version')
+    implementation group: 'org.projectlombok', name: 'lombok', version: property('lombok.version')
+    implementation group: 'com.vehicle.rentservice.model', name: 'carRentEntity', version: property('model.version')
+    implementation group: 'org.hibernate', name: 'hibernate-validator', version: property('hibernate.validator.version')
+}
+
+publishing.publications.modelPublish { from components.java }
+

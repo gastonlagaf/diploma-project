@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+archivesBaseName = 'carRentDTO'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile group: 'org.projectlombok', name: 'lombok', version: property('lombok.version')
+	compile project(':carRentEntity')
+}
+
+publishing.publications.modelPublish { from components.java }

@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+archivesBaseName = 'carRentEntity'
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+dependencies {
+	compile group: 'org.hibernate', name: 'hibernate-validator', version: property('hibernate.validator.version')
+	compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: property('hibernate.jpa.version')
+	compile group: 'org.projectlombok', name: 'lombok', version: property('lombok.version')
+}
+
+publishing.publications.modelPublish { from components.java }

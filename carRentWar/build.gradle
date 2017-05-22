@@ -1,0 +1,54 @@
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+
+group = 'com.vehicle.rentservice.ui'
+archivesBaseName = 'carRentalWebapplication'
+version = '0.5.1'
+
+repositories {
+	jcenter()
+	mavenLocal()
+}
+
+configurations { 
+	webAppLib
+	webAppJSP
+	webAppStatic
+}
+
+dependencies {
+	webAppLib group: 'log4j', name: 'log4j', version: property('log4j.version')
+	webAppLib group: 'jstl', name: 'jstl', version: property('jstl.version')
+	webAppLib group: 'org.slf4j', name: 'slf4j-log4j12', version: property('slf4j.version')
+	webAppLib group: 'org.slf4j', name: 'slf4j-api', version: property('slf4j.version')
+	
+	webAppLib group: 'com.vehicle.rentservice.model', name: 'carRentEntity', version: property('model.version')
+	webAppLib group: 'com.vehicle.rentservice.persistence', name: 'carRentOraclePersistence', version: property('persistence.version')
+	webAppLib group: 'com.vehicle.rentservice.service', name: 'defaultFlowSetService', version: property('persistence.version')
+	webAppLib group: 'com.vehicle.rentservice.ui', name: 'carRentActionsUI', version: property('ui.version')
+	webAppJSP group: 'com.vehicle.rentservice.ui', name: 'carRentJSP', version: property('ui.version'), ext: 'zip'
+	webAppStatic group: 'com.vehicle.rentservice.ui', name: 'carRentStaticSite', version: property('ui.version'), ext: 'zip'
+}
+
+war {
+	archiveName = "${archivesBaseName}.war"
+
+	webXml = file('src/resources/web.xml')
+
+	classpath configurations.webAppLib
+	
+	webInf {
+		into('views') { from zipTree(configurations.webAppJSP.singleFile).matching {exclude 'META-INF/**'} }
+		into('config') { from file('src/resources/log4j.xml')}
+		into('static') { from zipTree(configurations.webAppStatic.singleFile).matching {exclude 'META-INF/**'} }
+	}
+}
+
+task redeploy(dependsOn: war) {
+	doLast {
+		copy {
+			from war
+			into "${System.getenv("CATALINA_HOME")}/webapps"
+		}
+	}
+}

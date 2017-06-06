@@ -20,7 +20,7 @@
 		<div class="footer-copyright">
 			<div class="container">
 				© 2017 <i class="white-text">youJustDontKnow Ltd.</i> <a
-					class="grey-text text-lighten-4 right" href="#!"><s:message code="footer.contribute" /></a>
+					class="grey-text text-lighten-4 right" target="_blank" href="https://github.com/gastonlagaf/diploma-project"><s:message code="footer.contribute" /></a>
 			</div>
 		</div>
 	</footer>

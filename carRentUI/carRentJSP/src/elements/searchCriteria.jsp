@@ -9,7 +9,7 @@
 	<div class="search-criteria">
 		<p class="search-title primary-text"><s:message code="search.title" /></p>
 		<div class="input-field col s12">
-			<select id="country" onchange="searchVehicles(this)">
+			<select id="country" onchange="searchVehicles(1, this)">
 				<option class="disabled-option" value="" disabled selected><s:message code="search.country.select" /></option>
 				<option value=""><s:message code="ALL" /></option>
 				<c:forEach
@@ -20,17 +20,17 @@
 			</select> <label><s:message code="search.label.country" /></label>
 		</div>
 		<div class="input-field col s12">
-			<select disabled id="city" onchange="searchVehicles(this)">
+			<select disabled id="city" onchange="searchVehicles(1, this)">
 				<option class="disabled-option" value="" disabled selected><s:message code="search.city.select" /></option>
 			</select> <label><s:message code="search.label.city" /></label>
 		</div>
 		<div class="input-field col s12">
-			<select disabled id="location" onchange="searchVehicles(this)">
+			<select disabled id="location" onchange="searchVehicles(1, this)">
 				<option class="disabled-option" value="" disabled selected><s:message code="search.location.select" /></option>
 			</select> <label><s:message code="search.label.location" /></label>
 		</div>
 		<div class="input-field col s12">
-			<select id="brand" onchange="searchVehicles(this)">
+			<select id="brand" onchange="searchVehicles(1, this)">
 				<option value="" disabled selected><s:message code="search.brand.select" /></option>
 				<option value=""><s:message code="ALL" /></option>
 				<c:forEach
@@ -41,7 +41,7 @@
 			</select> <label><s:message code="search.label.brand" /></label>
 		</div>
 		<div class="input-field col s12">
-			<select id="body-type" onchange="searchVehicles(this)">
+			<select id="body-type" onchange="searchVehicles(1, this)">
 				<option value="" disabled selected><s:message code="search.body.type.select" /></option>
 				<option value=""><s:message code="ALL" /></option>
 				<c:forEach
@@ -52,11 +52,11 @@
 			</select> <label><s:message code="search.label.body.type" /></label>
 		</div>
 		<div class="input-field col s6">
-			<input id="fromYear" min="2000" type="number" onchange="searchVehicles(this)"> <label
+			<input id="fromYear" min="2000" type="number" onchange="searchVehicles(1, this)"> <label
 				for="fromYear"><s:message code="search.label.year.from" /></label>
 		</div>
 		<div class="input-field col s6">
-			<input id="toYear" min="2000" type="number"  onchange="searchVehicles(this)"> <label
+			<input id="toYear" min="2000" type="number"  onchange="searchVehicles(1, this)"> <label
 				for="toYear"><s:message code="search.label.year.to" /></label>
 		</div>
 		<script>

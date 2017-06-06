@@ -27,6 +27,7 @@ function initCharts() {
 	
 	var ctx = document.getElementById('ordered-countries-chart')
 	ctx = ctx.getContext('2d')
+	stats.orderedCountries.data.datasets[0].backgroundColor = colors
 	var myChart = new Chart(ctx, stats.orderedCountries)
 
 }

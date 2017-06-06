@@ -1,8 +1,8 @@
-function searchVehicles(element) {
+function searchVehicles(page, element) {
 	var searchEntity = formSearchEntity()
 	$('#main-viewer').animate({
 		opacity : 0
-	}, 500, requestSearchResult(searchEntity, element))
+	}, 500, requestSearchResult(searchEntity, element, page))
 }
 
 function viewSearchPage(page) {
@@ -23,8 +23,8 @@ function viewSearchPage(page) {
 	}))
 }
 
-function requestSearchResult(searchEntity, curElement) {
-	var requestUrl = SERVER_URL + SEARCH_VEHICLE_URI + "/page/1?searchEntity="
+function requestSearchResult(searchEntity, curElement, page) {
+	var requestUrl = SERVER_URL + SEARCH_VEHICLE_URI + "/page/" + page + "?searchEntity="
 			+ JSON.stringify(searchEntity)
 	$.ajax({
 		url : requestUrl,
@@ -33,31 +33,33 @@ function requestSearchResult(searchEntity, curElement) {
 			var citiesList = $(data).filter('select#city')
 			var locationsList = $(data).filter('select#location')
 			setContent($('#mainContentView'), vehiclesList.html())
-			if ($(curElement).val() != "") {
-				switch ($(curElement).attr('id')) {
-				case 'country':
-					$('select#city').removeAttr('disabled')
-					$('select#location').attr('disabled', 'disabled')
-					setContent($('select#city'), citiesList.html())
-					setContent($('select#location'), locationsList.html())
-					break
-				case 'city':
-					$('select#location').removeAttr('disabled')
-					setContent($('select#location'), locationsList.html())
-					break
-				}
-			} else {
-				switch ($(curElement).attr('id')) {
-				case 'country':
-					$('select#city').attr('disabled', 'disabled')
-					$('select#location').attr('disabled', 'disabled')
-					setContent($('select#city'), citiesList.html())
-					setContent($('select#location'), locationsList.html())
-					break
-				case 'city':
-					$('select#location').attr('disabled', 'disabled')
-					setContent($('select#location'), locationsList.html())
-					break
+			if(curElement) {
+				if ($(curElement).val() != "") {
+					switch ($(curElement).attr('id')) {
+					case 'country':
+						$('select#city').removeAttr('disabled')
+						$('select#location').attr('disabled', 'disabled')
+						setContent($('select#city'), citiesList.html())
+						setContent($('select#location'), locationsList.html())
+						break
+					case 'city':
+						$('select#location').removeAttr('disabled')
+						setContent($('select#location'), locationsList.html())
+						break
+					}
+				} else {
+					switch ($(curElement).attr('id')) {
+					case 'country':
+						$('select#city').attr('disabled', 'disabled')
+						$('select#location').attr('disabled', 'disabled')
+						setContent($('select#city'), citiesList.html())
+						setContent($('select#location'), locationsList.html())
+						break
+					case 'city':
+						$('select#location').attr('disabled', 'disabled')
+						setContent($('select#location'), locationsList.html())
+						break
+					}
 				}
 			}
 			$('select').material_select()

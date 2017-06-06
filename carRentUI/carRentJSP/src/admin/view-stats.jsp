@@ -13,19 +13,55 @@
 		data-tab-uri="/admin/statistics"></div>
 	<div id="prev-invocation" data-invocation="viewUserCabinet()"></div>
 	<div class="row">
-		<div class="col s4">
+		<div class="col s6">
 			<canvas id="countries-chart"></canvas>
 		</div>
-		<div class="col s4">
-			<canvas id="brands-chart"></canvas>
-		</div>
-		<div class="col s4">
-			<canvas id="body-types-chart"></canvas>
+		<div class="col s6">
+			<br/><br/>
+			<p class="primary-text cabinet-title">
+				<i>
+					<s:message code="stats.search.country" />
+				</i>
+			</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12">
+		<div class="col s6">
+			<canvas id="brands-chart"></canvas>
+		</div>
+		<div class="col s6">
+			<br/><br/>
+			<p class="primary-text cabinet-title">
+				<i>
+					<s:message code="stats.search.brand" />
+				</i>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s6">
+			<canvas id="body-types-chart"></canvas>
+		</div>
+		<div class="col s6">
+			<br/><br/>
+			<p class="primary-text cabinet-title">
+				<i>
+					<s:message code="stats.search.body.type" />
+				</i>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s6">
 			<canvas id="ordered-countries-chart"></canvas>
+		</div>
+		<div class="col s6">
+			<br/>
+			<p class="primary-text cabinet-title">
+				<i>
+					<s:message code="stats.contract.orders" />
+				</i>
+			</p>
 		</div>
 	</div>
 	<div class="row">

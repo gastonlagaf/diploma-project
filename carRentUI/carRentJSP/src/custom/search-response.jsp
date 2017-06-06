@@ -77,7 +77,7 @@
 							class="material-icons">chevron_left</i></a></li>
 				</c:when>
 				<c:otherwise>
-					<li class="waves-effect"><a onclick="viewVehicles(${page - 1})"><i
+					<li class="waves-effect"><a onclick="searchVehicles(${page - 1})"><i
 							class="material-icons">chevron_left</i></a></li>
 				</c:otherwise>
 			</c:choose>
@@ -88,17 +88,17 @@
 						<li class="active"><a>${loop.index}</a></li>
 					</c:when>
 					<c:otherwise>
-						<li><a onclick="viewVehicles(${loop.index})">${loop.index}</a></li>
+						<li><a onclick="searchVehicles(${loop.index})">${loop.index}</a></li>
 					</c:otherwise>
 				</c:choose>
 			</c:forEach>
 			<c:choose>
 				<c:when test="${page == searchResult.vehiclesPage.pages}">
-					<li class="disabled"><a href="#!"><i
+					<li class="disabled"><a href="#!"><i	
 							class="material-icons">chevron_right</i></a></li>
 				</c:when>
 				<c:otherwise>
-					<li class="waves-effect"><a onclick="viewVehicles(${page + 1})"><i
+					<li class="waves-effect"><a onclick="searchVehicles(${page + 1})"><i
 							class="material-icons">chevron_right</i></a></li>
 				</c:otherwise>
 			</c:choose>

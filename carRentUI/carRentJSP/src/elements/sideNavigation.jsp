@@ -38,8 +38,8 @@
 				<c:if test="${pageContext.request.isUserInRole('ROLE_ADMIN')}">
 					<li><a onclick="navBarOpenContracts()" href="#" class="waves-effect"><i class="material-icons">class</i><s:message code="sidenav.contracts" /></a></li>
 				</c:if>
-				<li><a onclick="openUserModal()" href="#" class="waves-effect"><i class="material-icons">lock</i><s:message code="sidenav.password.change" /></a></li>
-				<li><a onclick="openAddFundsModal()" href="#" class="waves-effect"><i class="material-icons">credit_card</i><s:message code="sidenav.funds" /></a></li>
+				<li><a onclick="openUserModal()" class="waves-effect"><i class="material-icons">lock</i><s:message code="sidenav.password.change" /></a></li>
+				<li><a onclick="openAddFundsModal()" class="waves-effect"><i class="material-icons">credit_card</i><s:message code="sidenav.funds" /></a></li>
 				<li><div class="divider"></div></li>
 				<li><a class="waves-effect" onclick="logoutUser()"><i class="material-icons">recent_actors</i><s:message code="sidenav.logout" /></a></li>
 			</c:when>
@@ -52,7 +52,7 @@
 		<li><p class="primary-text locale-selection-title"><i><s:message code="sidenav.locale.title" /></i></p><li>
 		<li><div class="divider"></div></li>
 		<li><a href="#" data-value="en" onclick="changeLocale(this)" class="locale-option blue-grey lighten-1 waves-effect">English</a></li>
-		<li><a href="#" data-value="ru" onclick="changeLocale(this)" class="locale-option purple accent-2 waves-effect">Русский</a></li>
+		<li><a href="#" data-value="ru" onclick="changeLocale(this)" class="locale-option blue-grey darken-1 waves-effect">Русский</a></li>
 	</ul>
 </body>
 </html>

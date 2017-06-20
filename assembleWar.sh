@@ -1,0 +1,2 @@
+cd ./carRentWar
+./gradlew war

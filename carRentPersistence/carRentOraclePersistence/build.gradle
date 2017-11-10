@@ -11,10 +11,11 @@ dependencies {
 	compile group: 'commons-dbcp', name: 'commons-dbcp', version: property('commons.dbcp.version')
     compile group: 'org.springframework.data', name: 'spring-data-jpa', version: property('spring.data.jpa.version')
     compile group: 'org.hibernate', name: 'hibernate-core', version: property('hibernate.core.version')
-    
     compile group: 'com.vehicle.rentservice.model', name: 'carRentEntity', version: property('model.version')
-    
     compile group: 'com.oracle', name: 'ojdbc6', version: property('ojdbc.version')
+    
+    testCompile group: 'org.spockframework', name: 'spock-core', version: property('spock.version')
+    testCompile group: 'org.springframework', name: 'spring-test', version: property('spring.test.version')
 }
 
 publishing.publications.persistencePublish {
